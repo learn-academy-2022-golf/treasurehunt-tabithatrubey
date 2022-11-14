@@ -34,7 +34,26 @@ const App = () => {
       updatedBoard[index] ="🎄"
       setBoard(updatedBoard)
     }
+    
   }
+  const refreshPage = () => {
+    setBoard([
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?"
+    ])
+    
+  }
+  console.log(treasureLocation)
+
+
+ 
 
   return (
     <>
@@ -51,6 +70,9 @@ const App = () => {
         ) 
       })}
       </div>
+      <p>
+        <button className="playagain" onClick={refreshPage}>Play Again!</button>
+      </p>
     </>
   )
 }
