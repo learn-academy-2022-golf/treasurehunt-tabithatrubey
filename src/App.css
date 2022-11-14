@@ -16,3 +16,8 @@ h1 {
   width: 620px;
   margin: 0 auto;
 }
+
+.playagain {
+  margin: 0, auto;
+  border: 3px solid green;
+}
