@@ -16,12 +16,15 @@ const App = () => {
   ])
 
   const handleGamePlay = (index) => {
-    alert(index)
+    // alert(index)
+    let updatedBoard = [...board]
+    updatedBoard[index] = "🎄"
+    setBoard(updatedBoard)
   }
 
   return (
     <>
-      <h1>Treasure Hunt Game</h1>
+      <h1>Christmas Treasure Hunt Game</h1>
       <div className="gameboard">
       {board.map((value, index) => {
         return (
